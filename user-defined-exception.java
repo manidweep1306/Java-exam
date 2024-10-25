@@ -13,8 +13,8 @@ class user {
         try {
             validate(19);
             validate(14);
-        } catch (ArithmeticException e) {
-            System.out.println(e.getMessage());
+        } catch (Exception e) {
+            System.out.println(e);
         }
     }
 }
