@@ -7,7 +7,7 @@ class builtin{
             int a[] = {1,4,5,7,9,12};
             System.out.println(a[445]);
         }
-        catch(Exception e){
+        catch(ArrayIndexOutOfBoundException e){
             System.out.println(e);
         }
     }
