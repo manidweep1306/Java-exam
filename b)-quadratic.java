@@ -13,9 +13,12 @@ public class QuadraticRoots2 {
 
         // Discriminant D = b*b - 4ac (here c = 0)
         double D = b * b;
-
+        if(a==0){
+            System.out.println("a should not be equal to 0");
+            sc.close();
+        }
         // Checking the nature of the roots
-        if (D > 0) {
+        else if (D > 0) {
             // ax2 + bx = 0 => ( x = 0) or (ax + b = 0)
             double root1 = -b / a;
             double root2 = 0;
@@ -33,5 +36,5 @@ public class QuadraticRoots2 {
         }
 
         sc.close();
-    }
+        }
 }
